@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/02 18:41:16 by ctherin          ###   ########.fr       */
+/*   Created: 2022/05/02 18:32:27 by ctherin           #+#    #+#             */
+/*   Updated: 2022/05/02 18:46:34 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include<stddef.h>
 
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isascii(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-void	*ft_memset(void *s, int c, size_t n);
-size_t	ft_strlen(const char *s);
-void	*ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
-void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	size_t	i;
 
-#endif
+	i = 0;
+	if (dest == NULL || src == NULL)
+		return (NULL);
+	if (dest < src)
+	{
+		while (i < n)
+		{
+			((char *)dest)[i] = ((char *)src)[i];
+			i++;
+		}
+	}
+	else
+		while (n--)
+			((char *)dest)[n] = ((char *)src)[n];
+	return (dest);
+}
