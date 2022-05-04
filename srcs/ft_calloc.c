@@ -1,34 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/02 19:10:46 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/04 19:05:43 by ctherin          ###   ########.fr       */
+/*   Created: 2022/05/04 19:10:32 by ctherin           #+#    #+#             */
+/*   Updated: 2022/05/04 19:18:53 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stddef.h>
+#include<stdlib.h>
+#include<limits.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
+	void	*ptr;
 	size_t	i;
 
 	i = 0;
-	if (!dst || !src)
-		return (0);
-	if (size > 0)
+	if (nmemb > LONG_MAX || size > LONG_MAX)
+		return (NULL);
+	ptr = malloc(nmemb * size);
+	if (!ptr)
+		return (NULL);
+	while (i < nmemb * size)
 	{
-		while (src[i] && --size)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	while (src[i])
+		((char *)ptr)[i] = 0;
 		i++;
-	return (i);
+	}
+	return (ptr);
 }
+
+/*int main()
+{
+	int *ptr = ft_calloc(1, 1);
+	(void)ptr;
+	return (0);
+}*/

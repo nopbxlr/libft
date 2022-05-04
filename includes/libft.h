@@ -6,12 +6,14 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/02 19:14:01 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/04 19:30:45 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+#	include<stddef.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -25,5 +27,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 
 #endif
