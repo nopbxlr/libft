@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/04 21:11:16 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/04 21:38:53 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strdup(const char *s);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_strchr(const void *s, int c);
+void	*ft_strrchr(const void *s, int c);
 
 #endif
