@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/04 20:02:22 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/04 20:20:54 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 void	*ft_calloc(size_t nmemb, size_t size);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 #endif
