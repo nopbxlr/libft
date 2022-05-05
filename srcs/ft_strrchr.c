@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 21:27:54 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/05 18:35:28 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/05 18:38:14 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ void	*ft_strrchr(const void *s, int c)
 	if (!s)
 		return (NULL);
 	len = ft_strlen(s) + 1;
-	if (!len)
-		return (NULL);
 	i = len;
 	ptr = (unsigned char *)s;
 	while (i--)
