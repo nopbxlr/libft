@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/05 18:49:45 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/06 18:08:38 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_strchr(const void *s, int c);
 void	*ft_strrchr(const void *s, int c);
 int		ft_atoi(const char *nptr);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	**ft_split(const char *s, char c);
 
 #endif
