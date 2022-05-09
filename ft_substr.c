@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 17:31:48 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 17:55:35 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 19:57:45 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr = ft_calloc(len + 1, sizeof(char));
 	if (!ptr)
 		return (NULL);
-	while (i < len && d[start + i])
+	if (start < ft_strlen(s))
 	{
-		ptr[i] = d[i + start];
-		i++;
+		while (i < len && d[start + i])
+		{
+			ptr[i] = d[i + start];
+			i++;
+		}
 	}
 	return (ptr);
 }
