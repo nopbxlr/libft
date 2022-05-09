@@ -6,25 +6,11 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 18:00:56 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/06 18:10:40 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 16:51:33 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stddef.h>
-#include<stdlib.h>
-
-void	*ft_memcpy(void *dest, const void *src, size_t n)
-{
-	size_t	i;
-
-	i = 0;
-	while (i < n)
-	{
-		((char *)dest)[i] = ((char *)src)[i];
-		i++;
-	}
-	return (dest);
-}
+#include"libft.h"
 
 static inline int	is_sep(char c1, char c2)
 {
@@ -40,7 +26,7 @@ static void	got_word(char *str, char **ptr, int *idx, int *word_length)
 	*idx += 1;
 }
 
-static int	count_words(const char *s, char c)
+static int	count_words(char *s, char c)
 {
 	int	count;
 	int	word_length;
@@ -68,9 +54,8 @@ static int	count_words(const char *s, char c)
 	return (count);
 }
 
-char	**ft_split(const char *s, char c)
+void	put_data(char *s, char c, char **ptr)
 {
-	char	**ptr;
 	int		i;
 	int		idx;
 	int		word_length;
@@ -78,7 +63,6 @@ char	**ft_split(const char *s, char c)
 	idx = 0;
 	i = 0;
 	word_length = 0;
-	ptr = malloc(sizeof(char *) * (count_words(s, c) + 1));
 	while (s[i])
 	{
 		if (is_sep(s[i], c))
@@ -93,5 +77,15 @@ char	**ft_split(const char *s, char c)
 	if (word_length)
 		got_word(&s[i - word_length], ptr, &idx, &word_length);
 	ptr[idx] = 0;
+}
+
+char	**ft_split(const char *s, char c)
+{
+	char	**ptr;
+
+	ptr = malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
+	if (!ptr)
+		return (NULL);
+	put_data((char *)s, c, ptr);
 	return (ptr);
 }
