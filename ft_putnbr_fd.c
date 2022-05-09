@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 20:33:19 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 20:34:49 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 21:40:53 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,16 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	ft_putstr_fd(ft_itoa(n), fd);
+	unsigned int	num;
+
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		num = n * -1;
+	}
+	else
+		num = n;
+	if (num >= 10)
+		ft_putnbr_fd(num / 10, fd);
+	ft_putchar_fd(num % 10 + '0', fd);
 }

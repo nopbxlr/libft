@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 17:31:48 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 19:57:45 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 21:34:26 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			i++;
 		}
 	}
+	else
+		return (ft_calloc(1, sizeof(char)));
 	return (ptr);
 }
