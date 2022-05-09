@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 16:58:14 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 17:22:48 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 17:34:10 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 
 	nb_len = get_nb_len(n);
 	nl = n;
-	ptr = ft_calloc(nb_len, sizeof(char));
+	ptr = ft_calloc(nb_len + 1, sizeof(char));
 	if (!ptr)
 		return (NULL);
 	if (nl < 0)
