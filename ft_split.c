@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 18:00:56 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 16:51:33 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 17:55:56 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,8 @@ char	**ft_split(const char *s, char c)
 {
 	char	**ptr;
 
+	if (!s)
+		return (NULL);
 	ptr = malloc(sizeof(char *) * (count_words((char *)s, c) + 1));
 	if (!ptr)
 		return (NULL);
