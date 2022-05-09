@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 15:54:22 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 17:21:37 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void	*ft_strrchr(const void *s, int c);
 int		ft_atoi(const char *nptr);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(const char *s, char c);
+char	*ft_itoa(int n);
 
 #endif
