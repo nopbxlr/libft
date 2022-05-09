@@ -6,9 +6,11 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 18:40:16 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/05 19:19:23 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 15:55:50 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 int	ft_is_whitespace(char c)
 {

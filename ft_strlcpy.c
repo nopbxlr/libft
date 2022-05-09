@@ -6,11 +6,11 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 19:10:46 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/04 19:05:43 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 16:00:15 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stddef.h>
+#include"libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 17:49:13 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/06 18:08:38 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 15:54:22 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include<stddef.h>
+# include<stdlib.h>
+# include<limits.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);

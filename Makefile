@@ -6,12 +6,12 @@
 #    By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/02 17:54:17 by ctherin           #+#    #+#              #
-#    Updated: 2022/05/05 19:28:18 by ctherin          ###   ########.fr        #
+#    Updated: 2022/05/09 16:02:19 by ctherin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SRCS = $(wildcard *.c)
+SRCS = $(wildcard ft_*.c)
 
 OBJS = ${SRCS:.c=.o}
 
@@ -21,7 +21,7 @@ RM = rm -f
 CFLAGS = -Wall -Werror -Wextra
 
 .c.o:		
-			${CC} ${CFLAGS} -I / -c $< -o ${<:.c=.o}
+			${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 
 all:		${NAME}
 

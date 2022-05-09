@@ -6,11 +6,11 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 21:04:57 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/04 21:05:37 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/09 16:00:06 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
+#include"libft.h"
 
 char	*ft_strdup(const char *s)
 {
