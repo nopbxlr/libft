@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 16:58:14 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 17:34:10 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/10 22:28:11 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,3 @@ char	*ft_itoa(int n)
 	}
 	return (ptr);
 }
-
-/*#include<stdio.h>
-int	main()
-{
-	printf("%s", ft_itoa(12));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:53:23 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 15:56:10 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/10 22:27:46 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,3 @@ int	ft_isalnum(int c)
 		return (8);
 	return (0);
 }
-
-/*#include<stdio.h>
-#include<ctype.h>
-int	main()
-{
-	printf("%d\n", ft_isalnum('$'));
-	printf("%d\n", isalnum('$'));
-	return (0);
-}*/

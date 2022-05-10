@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 19:10:32 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 15:56:05 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/10 22:27:42 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	}
 	return (ptr);
 }
-
-/*int main()
-{
-	int *ptr = ft_calloc(1, 1);
-	(void)ptr;
-	return (0);
-}*/
