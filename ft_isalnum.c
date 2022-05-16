@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:53:23 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/10 22:27:46 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/16 16:37:15 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,5 @@
 
 int	ft_isalnum(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (8);
-	if (c >= 'a' && c <= 'z')
-		return (8);
-	if (c >= 'A' && c <= 'Z')
-		return (8);
-	return (0);
+	return (ft_isdigit(c) || ft_isalpha(c));
 }

@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 21:10:17 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 16:00:37 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/16 16:35:36 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	unsigned char	a;
-
-	a = (unsigned char)c;
-	if (a >= 'A' && a <= 'Z')
-		return (c + 32);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
 	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 21:07:38 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 15:55:13 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/16 16:37:33 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	unsigned char	a;
-
-	a = (unsigned char)c;
-	if (a >= 'a' && a <= 'z')
-		return (c - 32);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
 	return (c);
 }

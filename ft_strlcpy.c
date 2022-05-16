@@ -6,7 +6,7 @@
 /*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 19:10:46 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/09 16:00:15 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/16 16:29:13 by ctherin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (!dst || !src)
-		return (0);
 	if (size > 0)
 	{
 		while (src[i] && --size)
