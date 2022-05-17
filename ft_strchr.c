@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ctherin <ctherin@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nop <nop@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 21:27:54 by ctherin           #+#    #+#             */
-/*   Updated: 2022/05/16 16:28:46 by ctherin          ###   ########.fr       */
+/*   Updated: 2022/05/17 01:59:27 by nop              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-void	*ft_strchr(const void *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	size_t			i;
 	unsigned char	*ptr;
